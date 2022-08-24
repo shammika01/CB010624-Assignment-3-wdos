@@ -1,7 +1,7 @@
 const staticCache='staticv1';
 const dyanamicCache='dyanamicv1';
 
-const assets=['./','./pd.html','./pd.js','./pd.css','./activities.html','./activities.js','./activities.css'];
+const assets=['/','/pd.html','/pd.js','/pd.css','/activities.html','/activities.js','/activities.css'];
 
 self.addEventListener('install',(evt)=>{
     evt.waitUntil()
