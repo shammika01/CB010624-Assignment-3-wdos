@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>MyCeylon|Purchase & Donate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pd.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins" id="bars"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./pd.js"></script>
+
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <a href="./homepage.html">MyCeylon</a>
+      </div>
+      <a href="#" class="hamburger-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a class="active" href="./homepage.html">Home</a></li>
+          <li><a href="https://en.unesco.org/countries/sri-lanka" target="_blank">UNESCO SL</a></li>
+          <li><a href="./wildlife.html">WILDLIFE attractions</a></li>
+          <li><a href="./beaches.html">beaches</a></li>
+          <li><a href="./activities.html">activities</a></li>
+          <li><a href="./heritage.html">heritage locations</a></li>
+          <li><a href="./pd.html">purchase and donate</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <br> <br> <br>
+
+<div class="container">
+    <div class="purchase">
+        <h3>PURCHASE</h3>
+        <br> <br>
+        <h4>Purchase some of the favourite things rated by our visitors </h4> <br>
+
+        <div class="orders">
+
+          <img src="https://i.pinimg.com/236x/57/e0/7a/57e07a0e0bf35877143eaff811aa8835--curries-sri-lanka.jpg" alt="traditional sri lankan pot"> <br> Traditional Sri Lankan Pot <br>
+          <button type="button" class="button" onclick="addOne()">Add To Favourites</button> <button type="button" class="button" onclick="order()">Order Favourite</button> <br> <br>
+
+          <img src="https://thumbs.dreamstime.com/b/sri-lankan-bird-mask-high-quality-promotes-good-luck-protection-can-be-printed-cut-out-40793381.jpg" alt="traditional sri lankan mask"> <br> Traditional Mask <br>
+          <button type="button" onclick="addTwo()" class="button">Add To Favourites</button> <button onclick="order()" class="button" type="button">Order Favourite</button> <br> <br>
+
+          <img src="https://static-01.daraz.lk/p/53a50cef4b7435e0b8951cc1a216c76d.jpg" alt="Kithul Wooden Mug"> <br> Kithul Wooden Mug <br>
+          <button class="button" type="button" onclick="addThree()">Add To Favourites</button> <button class="button" type="button" onclick="order()">Order Favourite</button> <br> <br>
+
+          <img src="https://static-01.daraz.lk/p/9517598bef4f5efa8eeeff36903c79d7.jpg" alt="bathik frock"> <br> Bathik Frock<br>
+          <button class="button" type="button" onclick="addFour()">Add To Favourites</button> <button class="button" type="button" onclick="order()">Order Favourite</button> <br> <br>
+
+          <img src="https://ds393qgzrxwzn.cloudfront.net/resize/c500x500/cat1/img/images/0/IUFqmgdhbV.jpg" alt="wood crafted elephant"> <br> Wood Crafted Elephant<br>
+          <button class="button" type="button" onclick="addFive()">Add To Favourites</button> <button class="button" type="button" onclick="order()">Order Favourite</button> <br> <br>
+        </div>  
+
+        <form action="" >
+          <p id="orderOut"></p>
+        </form> <br> <br>
+
+        <p>Below are some of the online shops that you can purchase unique, Sri Lankan made material !</p> <br> <br>
+        <p>
+            <h4>Sri Lanka Antiques</h4>
+            <br>           Sri Lanka Antiques was established to serve high quality product, and value-based prices for Sri Lanka based customers. At Andy's Furniture Sri Lanka we have a long history of great product being delivered with great service. Andy's is just another proof of our commitment to quality service and product. We have two warehouses in Colombo, we are just a day's delivery from any City. <br> <br> Our warehouses has a full sampling of all of Andy's Furniture Sri Lanka's best selling Viyan beds, Premium wooden Almirahs, Perfectly repaired antique Dutch Boxes, , Antique Couch type Sofas. The focus is on selection, and value. Andy's Furniture Sri Lanka is intent on making a product done by premium quality wood that lasts for generations. The wood and product selection have been specially designed to keep the primuim qulity of the product. Each piece has a specific value range that makes it easy to select. <br> <br>
+
+            You can access our site by clicking <a href="http://www.srilankaantiques.com/antique_furniture_sri_lanka">here</a>
+            <br> <br> <br>
+            <h4>Lankpura LLC</h4> <br> 
+            Lankpura LLC is a website that is dedicated to Sri Lankan specialities. You can access many departments related with sri lanka by this website. It
+            includes, <br> <br>
+            <ul>
+              <li>Aryuvedic Material</li>
+              <li>Herbs and Spices</li>
+              <li>Sri Lankan Fashion</li>
+              <li>Grocery</li>
+              <li>Tea varieties</li>
+              <li>Activities</li>
+              <br><br> and many more. You can access the website by simply clicking <a href="https://lk.lakpura.com/">here</a>
+
+
+            </ul>
+        </p>
+    </div>
+
+    <div class="donate">
+        <div class="donate">
+            <h3>DONATE</h3>
+            <br> <br>
+
+            <form action="#" method="get" onsubmit="donate()">
+              <label for="name">Enter your name:</label>
+              <input  name="name" type="text" id="name" required>
+              <br> <br>
+              <label for="adrress">Enter your address:</label>
+              <input type="text" id="address" required >
+              <br> <br>
+              <label for="cardDetails" font-weight="bold" >Enter your credit/debit card details:</label><label for="card"></label>
+                <br> <br>
+                <div class="cardDetails">
+                  <label for="name">Name on card:</label>
+                <input type="text" placeholder="card holder's name" required> <br> <br>
+                <label for="carNo">Card number:</label>
+                <input placeholder="xxxx-xxxx-xxxx-xxxx" min="1111111111111111" max="9999999999999999" type="number" id="card" required >
+                <br> <br>
+                <label for="cvc">CVC:</label>
+                <input type="text" placeholder="MM/YY" max="99999" required>
+                
+                </div>
+                <br> 
+              <label for="amount">Enter the preferred amount to donate</label>
+              <br>
+              <select name="amount" id="amount">
+                <option value="100">100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2500">2500</option>
+                <option value="5000">5000</option>
+                <option value="10000">10000</option>
+              </select> <br> <br>
+
+              <button id="submit" onclick="" >Donate</button> <br> <br>
+
+            </form>
+
+
+
+
+    
+            <div class="txtOut">
+              <p id="txtOut">
+
+              </p>
+            </div>
+
+
+                <br> <br>
+            <p>
+                <h4>Help A Child In Need</h4>
+                <br>
+                <img src="./Material/CHML3973.JPG" alt="">
+                <br> <br>
+                           <a href="https://www.soschildrensvillages.lk/donate">SOS Children’s Villages</a> Sri Lanka is an approved charitable organization under the section 31 (09) (a) of the Inland Revenue Act No. 28 of 1979 Sri Lanka. <br> <br>Your donation helps
+               orphaned and abandoned children <br> <br> Your donation will be used to provide a loving home, education and quality care. <br> <br>
+               We will send regular communication to you on our work.                    </p> <br> <br> <br>
+
+             <p>
+                 <h4>Sri Lanka Red Cross Society</h4>
+                 <br>
+                 <img src="./Material/0219p1waves-copy.jpg" alt="">
+                 <br> <br>
+                 After assisting the people of Sri Lanka who were battered by the 2004 tsunami, we have now embarked upon a new quest to help the people who were victims of the 30 year old conflict. Our aim is to help them to rebuild their lives and livelihood and to strengthen them to be a strong contributor to the Sri Lankan economy. One of the best ways you can make a different in the lives of these people is to make a financial donation to our work. <br> <br>
+
+You may make a donation by clicking on <a href="https://slredcross.give.asia/">this link</a>. <br> <br>
+
+You may also choose to donate to one of our other core programmes, or to make a general “un-earmarked” donation. These donations essential to enable us to help people in desperate need, but for whom it can be difficult to raise funds as their plight is no longer in the news. <br> <br>
+
+The Sri Lanka Red Cross Society is not a government agency, but depends on donations to carry out its work. What’s more, the value of contributions is increased by the fact that the Society has a huge volunteer network, with 355 volunteers for every paid member of staff. <br> <br>
+             </p> <!--taken from sos srilanka and redcross srilanka-->
+
+        </div>
+        </div>
+</div>
+
+
+    <div class="footer">
+        <footer>
+
+          <div class="social-text">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.snapchat.com/" target="_blank">Snapchat</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+         <br> <br> <br>
+
+
+
+            <ul class="footer-list">
+                <li class="footer-list-item"><a href="./homepage.html">Home</a></li>
+                <li class="footer-list-item"><a href="./FAQ.html">FAQ</a></li>
+                <li class="footer-list-item"><a href="https://www.gmail.com/">Contact</a></li>
+            </ul>
+            <p class="copyright">MyCeylon © 2022</p>
+
+            <!--
+              reference list: http://www.srilankaantiques.com/,
+                              https://lk.lakpura.com/,
+                              https://www.soschildrensvillages.lk/donate
+                              https://slredcross.give.asia/
+            -->
+
+        </footer>
+    </div>
+
+  </body>
+</html>
